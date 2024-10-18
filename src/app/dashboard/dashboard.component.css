@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'CustomFont';
+  /* src: url('../assets/Fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('woff2'); */
+    src: url('/assets/Fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('woff2');
+}
+
+.retHome{
+    width: 100%;
+    background-color: #2f80ed;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family:  inter; */
+    
+    font-family: 'CustomFont', sans-serif;
+}
+
+.dash-body{
+    background-color: #333333;
+    margin:0 auto; 
+    border-radius: 15px;
+    width: 62rem;
+    height: 32rem;
+}
+
+.user-profile{
+    margin-top: 1rem;
+    padding-top:20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.user-profile .user-profile-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+
+.user-profile .backgroumd-image{
+    border-radius:10px ;
+    
+}
+
+.user-profile .user-image{
+    border-radius: 50%;
+    width: auto;
+    height: 9rem;
+    position: absolute;
+    top: 38%;
+    right:78%;
+}
+
+
+
+
+
+.dash-body .user-name h1{
+    color: #0c0c0c;
+    position: absolute;
+    margin-top: -3.5rem;
+    margin-left: -11rem;
+    font-size: 32px;
+
+}  
+
+
+.dash-body .user-name .bio{
+    position: absolute;
+    width: 100%;
+    top: 125%;
+    left: 11%;
+    font-size: 22px;
+    color: white;
+    opacity: 80%;
+}
+
+.dash-body .user-name .location{
+    position: absolute;
+    width: 100%;
+    top: 145%;
+    left: 11%;
+    font-size: 22px;
+    color: white;
+    opacity: 80%;
+}
+
+.dash-body .user-name .create-post{
+    width: 15%;
+    background-color: #2f80ed;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 170%;
+    left: 11%;
+}
+
+.dash-body .user-name i{
+    color: white;
+    opacity: 80%;
+    position: absolute;
+    top: 130%;
+    left: 87%;
+}
+
+
+
+
+
+
+/* Media query */
+
+
+ @media only screen and (max-width:1200px){
+    .dash-body{
+        width: 55rem;
+        height: 28rem;
+       
+    }
+
+    .dash-body .user-name i{
+        
+        left: 87%;
+    }
+
+    .dash-body .user-name .bio{
+        left:10%;
+        font-size: 20px;
+    }
+
+    .dash-body .user-name .location{
+        left:10%;
+        font-size: 20px;
+    }
+
+    .dash-body .user-name .create-post{
+        left: 10%;
+    }
+
+    .dash-body .user-name h1{
+       
+        font-size: 30px;
+    }
+    .user-profile .backgroumd-image{
+        width: 90%;
+    }
+
+    .user-profile .user-image{
+        height: 8rem;
+        right:76%;
+    }
+
+} 
+
+
+ @media only screen and (max-width:992px){
+
+     .dash-body{
+        width: 45rem;
+        height: 25rem;
+    }
+
+    .dash-body .user-name i{
+        
+        left: 88%;
+    }
+
+    .dash-body .user-name .bio{
+        left:8%;
+        font-size: 18px;
+    }
+
+    .dash-body .user-name .location{
+        left:8%;
+        font-size: 18px;
+    }
+
+    .dash-body .user-name .create-post{
+        left: 8%;
+        width: 17%;
+    
+        
+    }
+
+    .dash-body .user-name h1{
+        margin-top: -3rem;
+        margin-left: -10rem;
+        font-size: 24px;
+    }
+
+
+    .user-profile .backgroumd-image{
+        width: 85%;
+    }
+
+    .user-profile .user-image{
+        height: 6.5rem;
+        right:75%;
+        top: 42%;
+    }
+
+
+
+ }
+
+
+ @media only screen and (max-width:768px){
+
+
+     .dash-body{
+        width: 33rem;
+        height: 18rem;
+    }
+
+    .dash-body .user-name i{
+        
+        left: 86%;
+    }
+
+    .dash-body .user-name .bio{
+        left:10%;
+        font-size: 13px;
+    }
+    
+    .dash-body .user-name .location{
+        left:10%;
+        font-size: 13px;
+    }
+
+    .dash-body .user-name .create-post{
+        left: 10%;
+        width: 22%;
+    }
+
+    .dash-body .user-name h1{
+        margin-top: -2.5rem;
+        margin-left: -6rem;
+        font-size: 20px;
+    }
+
+
+    .user-profile .backgroumd-image{
+        width: 80%;
+    }
+
+    .user-profile .user-image{
+        height: 5rem;
+        right:72%;
+        top: 38%;
+    }
+
+ }
+
+
+
+ @media only screen and (max-width:576px){
+
+    .dash-body{
+        width: 31rem;
+        height: 17rem;
+    }
+
+    .dash-body .user-name i{
+        
+        left: 86%;
+    }
+
+    .dash-body .user-name .bio{
+        left:10%;
+        font-size: 12px;
+    }
+    
+    .dash-body .user-name .location{
+        left:10%;
+        font-size: 12px;
+    }
+
+    .dash-body .user-name .create-post{
+        left: 10%;
+        width: 22%;
+    }
+
+    .dash-body .user-name h1{
+        margin-top: -2rem;
+        margin-left: -6rem;
+        font-size: 18px;
+    }
+
+
+    .user-profile .backgroumd-image{
+        width: 80%;
+    }
+
+    .user-profile .user-image{
+        height: 4.5rem;
+        right:72%;
+        top: 38%;
+    }
+
+
+ }

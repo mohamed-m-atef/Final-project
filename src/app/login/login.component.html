@@ -1,0 +1,93 @@
+<div class="row mt-5">
+
+    <form (ngSubmit)="onsubmit()" [formGroup]="userform">
+
+        <div class="col-4 login-wrap mb-5" id="form-content">
+
+
+
+            <div class="form-wrapper">
+
+                <h2 class="username-wrap mb-5 " id="form-head">ًWelcome back</h2>
+
+                <div class=" ms-5 me-5 mt-5">
+
+                    <label for="exampleFormControlInput1" class="form-label  ">Username</label>
+
+                    <input type="text" class="form-control mb-2 " id="exampleFormControlInput1" name="username"
+                        formControlName="username" required>
+
+                    <div class="col-auto">
+
+
+                        <label for="inputPassword6" class="col-form-label">Password</label>
+
+                    </div>
+                    <div class="col-auto password-wrap showpassword ">
+                        <i (click)="togglePasswordVisibility()" class="fa-solid fa-eye"></i>
+
+                        <input [type]="showPassword ? 'text' : 'password'" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline" name="password" formControlName="password" required>
+
+                    </div>
+
+                    <div class="forgot-remember-wrapper  mt-1">
+
+
+
+                        <div class="terms mb-1">
+                            <input id="Remember" type="checkbox">
+                            <label for="Remember">Remember me</label>
+                        </div>
+                        <div class="mb-1">
+
+                            <button>Forgot password ?</button>
+
+                        </div>
+
+                    </div>
+                    <div class="col-auto mb-4"></div>
+
+                    <div class="col-auto mt-5">
+
+                        <button class="btn btn-success p-2 mb-4 login-btn" type="submit">Login</button>
+
+                    </div>
+
+
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+                    <div class="socialMedia">
+                        <a class="google">
+                            <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+                            oogle
+                        </a>
+
+                        <a>
+                            <i class="fa-brands fa-square-facebook" style="color:white;"></i>
+                            acebook
+                        </a>
+
+                    </div>
+
+                    <div class="col-auto mb-5 mt-5 signup-btn-wrapper">
+                        <p>Don't have an account ? </p>
+
+                        <button class="btn" id="switch-btn" (click)="showSignup()">Sign up</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="/assets/images/6bd46eef-117b-41ba-98a8-eb7e8f8334d4.png" alt="">
+
+            </div>
+        </div>
+
+    </form>
+
+</div>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TravelBlog homePage</title>
+</head>
+
+<body>
+
+    <!--------------------------------- Main Section ---------------------------------------->
+
+    <main>
+
+        <!-------------------------------- Hero Section --------------------------------------->
+        <div [class]="showpic ?  'profile-img-shown':'profile-img-disabled'">
+            <a [routerLink]="['/dashboard']">
+                <img src="/assets/images/user.png" alt="" class="profile-imgggg">
+            </a>
+        </div>
+
+        <section class="hero">
+            <header>
+                <nav>
+                    <h1 class="hHead">TravelB</h1>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a [routerLink]="['/gallery']">Gallery</a></li>
+
+                        <li><a [routerLink]="['/destinations']">Destinations</a></li>
+
+                        <li><a [routerLink]="['/blog']">Blog</a></li>
+
+                        <li class="signUp"> <a [routerLink]="['/signup']">SignUp</a> </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <h1 class="hHeadTwo">Tales Beyond Trails</h1>
+            <button class="btnHero">Start Your Journey</button>
+        </section>
+
+        <!------------------------- First Section ---------------------------------------------->
+
+        <section class="firstSection">
+            <div class="firstDiv">
+                <h1 class="firstHead">Be Adventurous</h1>
+                <p class="firstP">Let ypurself dive into untouched <br>
+                    corners of our beautiful world. We <br>
+                    provide you with the stepping stones to <br>
+                    your next adventure...
+                </p>
+                <p class="secondP">
+                    From the excitement of bustling cities <br>
+                    to the tranquility of serene landscapes, <br>
+                    we have everything covered for you. <br>
+                    Don't hesitate, your adventure awaits!
+                </p>
+            </div>
+        </section>
+
+        <!------------------------- Second Section --------------------------------------------->
+
+        <section class="secondSection">
+            <div class="secondDiv">
+                <div class="iconDiv">
+                    <img src="../assets/images/fire.png" alt="fireIcon" class="icon">
+                    <p>Trending Spots <br>
+                        Must Visit Journeys
+                    </p>
+                    <img src="../assets/images/right-arrow.png" alt="rigthArrow" class="icon">
+                </div>
+                <div class="iconDiv">
+                    <img src="../assets/images/shining.png" alt="shinesIcon" class="icon">
+                    <p>Unique Experiences <br>
+                        Taliored For You
+                    </p>
+                    <img src="../assets/images/right-arrow.png" alt="rigthArrow" class="icon">
+                </div>
+                <div class="iconDiv">
+                    <img src="../assets/images/knife.png" alt="frok and KnifeIcon" class="icon">
+                    <p>Culinary Ventures <br>
+                        Tantalize Your Taste Buds
+                    </p>
+                    <img src="../assets/images/right-arrow.png" alt="rigthArrow" class="icon">
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------- Third Section ----------------------------------------->
+
+        <section class="thirdSection">
+            <h1 class="thirdHead">Inspiring Travel Tales</h1>
+            <div class="thirdDiv">
+                <div>
+                    <img src="../assets/images/desertSunset image.jpg" alt="" width="200px" height="150px"
+                        class="photo">
+                </div>
+                <div>
+                    <img src="../assets/images/mountainHouse image.jpg" alt="" width="200px" height="350px"
+                        class="photo">
+                </div>
+                <div>
+                    <img src="../assets/images/waterFall image.jpg" alt="" width="200px" height="350px" class="photo">
+                </div>
+                <div>
+                    <img src="../assets/images/mountainSee image.jpg" alt="" width="200px" height="150px" class="photo">
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------- Fourth Section -------------------------------------->
+
+        <section class="fourthSection">
+            <div class="fourthSection">
+                <h1>Let's Stay Connected</h1>
+                <p>Love to travel? Us too. Subscribe more to our newsletter and you'll be <br>
+                    the first to know aboit our latest travel, special deals and insider <br>
+                    tips.Hurry up, the world is waiting!
+                </p>
+                <button class="btnOne">Travel_Blog.com</button>
+                <button class="btnTwo">Subscribe</button>
+            </div>
+        </section>
+
+        <!------------------------------------- Fifth Section --------------------------------->
+
+        <section class="fifthSection">
+            <div class="fifthSection">
+                <h1>Join US</h1>
+                <p>Thougth we were finished?We're just getting started. <br>
+                    There's a whole world out there, waiting to be explored. <br>
+                    So, what do you say? Grab your suitcase, and lets's get <br>
+                    going!
+                </p>
+                <button class="btnThree">Write Your Blog</button>
+                <button class="btnFour">Explore More</button>
+            </div>
+        </section>
+
+        <!-- -------------------------------Footer ------------------------------------------->
+        <footer>
+            <P>Travel_Blog|RWAD &#64; Gmail.Com</P>
+            <P>Copy Rights &copy; Contact US</P>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </footer>
+
+    </main>
+</body>
+
+</html>
